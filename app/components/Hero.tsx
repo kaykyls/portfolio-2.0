@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
-import hero from '../images/hero.png'
-
+import heroBg from '/public/images/heroBg.png'
+import waving from '/public/images/waving.svg'
+import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div style={{backgroundImage: "url('../images/hero.png')"}} className='h-screen'>
+    <div style={{backgroundImage: `url(${heroBg.src})`}} className='h-screen bg-cover'>
         {/* <div className=' w-80 h-80 bg-blue-600 rounded-full absolute  inset-x-1/4 inset-y-96 blur-3xl scale-150 opacity-20'>
 
         </div>
@@ -13,8 +13,7 @@ const Hero = () => {
 
         </div> */}
         <div className="container mx-auto flex flex-col h-full">
-            <Navbar />
-            <div className='flex flex-col justify-center h-full gap-2'>
+            <div className='flex flex-col justify-center h-full gap-6'>
                 <div className='flex gap-4 items-end'>
                     <span className='cursor-pointer'>
                         <svg width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,21 +28,27 @@ const Hero = () => {
                 </div>
 
                 <div>
-                    <div>
-                        <h1 className='text-[64px] text-slate-900 font-semibold'>
+                    <div className='flex items-center gap-4'>
+                        <h1 className='text-6xl text-slate-900 font-semibold'>
                             Fullstack Developer
                         </h1>
+                        <Image
+                            src={waving.src}
+                            width={60}
+                            height={60}
+                            alt='waving hand'
+                        />
                     </div>
                 </div>
 
-                <div>
-                    <p className='text-dark-gray text-xl max-w-md'>
+                <div className='max-w-md'>
+                    <p className='text-dark-gray text-xl font-medium'>
                         Hi, my name is Kayky, I am a Fullstack developer with 2+ years experience.
                     </p>
                 </div>
 
                 <div className='flex'>
-                    <div className='cursor-pointer mt-4 px-6 py-3 bg-gradient-to-r from-gradient-light-blue to-gradient-dark-blue'>
+                    <div className='cursor-pointer px-6 py-3 bg-gradient-to-r from-gradient-light-blue to-gradient-dark-blue'>
                         <span className='text-xl'>
                             Contact me
                         </span>
