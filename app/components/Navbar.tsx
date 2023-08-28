@@ -21,8 +21,6 @@ const Navbar = () => {
       };
     }, []);
 
-    console.log(isTop)
-
     return (
         <div className={`${isTop ? "bg-none" : "bg-white shadow"} fixed top-0 flex w-full transition`}>
             <div className='flex justify-between py-6 container mx-auto'>

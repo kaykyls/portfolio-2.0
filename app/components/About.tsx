@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='flex flex-col items-center py-24'>
+        <section className='flex flex-col items-center py-24'>
             <div className='mb-24'>
                 <h2 className='text-blue-600 font-medium text-5xl'>About Me</h2>
             </div>
@@ -68,7 +68,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
