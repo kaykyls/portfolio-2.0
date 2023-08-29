@@ -3,8 +3,6 @@ import technologies from '../utils/technologies';
 import Image from 'next/image';
 
 const Skills = () => {
-    console.log(technologies);
-
     return (
         <section className='flex flex-col bg-light-gray items-center py-24'>
             <div className='mb-24'>

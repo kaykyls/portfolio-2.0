@@ -7,11 +7,11 @@ const About = () => {
                 <h2 className='text-blue-600 font-medium text-5xl'>About Me</h2>
             </div>
             <div className='flex gap-8'>
-                <div className='bg-blue-600 w-96 h-96'>
+                <div className='bg-blue-600 w-96 h-96 shadow-2xl shadow-blue-900'>
 
                 </div>
                 <div className='flex flex-col justify-between'>
-                    <div className='max-w-md flex flex-col gap-6'>
+                    <div className='max-w-lg flex flex-col gap-6'>
                         <p className='text-dark-gray font-medium text-xl'>
                             I'm an <strong className='font-semibold text-black'>experienced</strong> Full Stack Developer with over <strong className='font-semibold text-black'>2 years</strong> of expertise using technologies like React, Node.js, MongoDB, Tailwind CSS, Next.js, and TypeScript. 
                         </p>
@@ -33,7 +33,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black text-base font-medium'>Web<br/>Development</span>
+                            <span className='text-black text-lg font-medium'>Web<br/>Development</span>
                         </div>
                         <div className="w-full flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
                             <div>
@@ -48,7 +48,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black text-base font-medium'>UX/UI<br/>Design</span>
+                            <span className='text-black text-lg font-medium'>UX/UI<br/>Design</span>
                         </div>
                         <div className="w-full flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
                             <div>
@@ -63,7 +63,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black text-base font-medium'>Mobile<br/>Development</span>
+                            <span className='text-black text-lg font-medium'>Mobile<br/>Development</span>
                         </div>
                     </div>
                 </div>

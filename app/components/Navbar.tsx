@@ -22,7 +22,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`${isTop ? "bg-none" : "bg-white shadow"} fixed top-0 flex w-full transition`}>
+        <div className={`${isTop ? "bg-none" : "bg-white shadow"} fixed top-0 flex w-full transition z-50`}>
             <div className='flex justify-between py-6 container mx-auto'>
                 <Link href={"/"} className='cursor-pointer'>
                     <svg width="129" height="30" viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">
