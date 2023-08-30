@@ -14,7 +14,7 @@ const Footer = () => {
                         </Link> 
                     </div>
                     <div className='flex'>
-                        <ul className='flex gap-6 font-normal text-xl text-gray'>
+                        <ul className='flex gap-6 font-normal flex-col md:flex-row text-base text-gray'>
                             <li>Home</li>
                             <li>About</li>
                             <li>Skills</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
                 <div className='flex justify-between'>
                     <div>
-                        <span className='text-xl text-gray'>© 2023 Copyright</span>
+                        <span className='text-base text-gray'>© 2023 Copyright</span>
                     </div>
                     <div className='flex gap-6'>
                         <Link target='_blank' href={"https://github.com/kaykyls"}>

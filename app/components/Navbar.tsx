@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react'
 
 const Navbar = () => {
     const [isTop, setIsTop] = useState(true);
+    const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
 
     useEffect(() => {
       const handleScroll = () => {
@@ -21,8 +22,12 @@ const Navbar = () => {
       };
     }, []);
 
+    const handleHamburgerMenu = () => {
+        setHamburgerIsOpen(!hamburgerIsOpen)
+    }
+
     return (
-        <div className={`${isTop ? "bg-none" : "bg-white shadow"} fixed top-0 flex w-full transition z-50`}>
+        <div className={`${isTop ? "bg-none" : "bg-white shadow"} fixed top-0 flex w-full transition z-40`}>
             <div className='flex justify-between py-6 container mx-auto'>
                 <Link href={"/"} className='cursor-pointer'>
                     <svg width="129" height="30" viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +35,7 @@ const Navbar = () => {
                     </svg>
                 </Link>
                 <div>
-                    <ul className='flex  gap-14 text-dark-gray text-xl font-medium'>
+                    <ul className={`${!hamburgerIsOpen ? "hidden md:flex" : "flex flex-col fixed w-screen h-screen left-0 top-0 bg-white items-center justify-center" } md:bg-transparent md:flex-row md:relative md:w-auto md:h-auto gap-14 text-dark-gray text-base font-medium`}>
                         <li className='cursor-pointer'>Home</li>
                         <li className='cursor-pointer'>About</li>
                         <li className='cursor-pointer'>Skills</li>
@@ -38,7 +43,7 @@ const Navbar = () => {
                         <li className='cursor-pointer'>Contact</li>
                     </ul>
                 </div>
-                <div className='flex gap-4'>
+                <div className='hidden md:flex gap-4'>
                     <button>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.752 15.002C20.5633 15.4975 19.2879 15.7518 18 15.75C12.615 15.75 8.25 11.385 8.25 6.00005C8.25 4.67005 8.516 3.40305 8.998 2.24805C7.22147 2.98916 5.70397 4.2394 4.63663 5.8413C3.56928 7.44321 2.99984 9.32513 3 11.25C3 16.635 7.365 21 12.75 21C14.6749 21.0002 16.5568 20.4308 18.1587 19.3634C19.7606 18.2961 21.0109 16.7786 21.752 15.002Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -50,6 +55,17 @@ const Navbar = () => {
                         </svg>
                     </button>
                 </div>
+                <span onClick={handleHamburgerMenu} className='md:hidden'>
+                {hamburgerIsOpen ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-black fixed right-4 top-4 z-50">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-black">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                )}
+                </span>
             </div>
         </div>
     )

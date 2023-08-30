@@ -29,7 +29,7 @@ const Hero = () => {
 
                 <div>
                     <div className='flex items-center gap-4'>
-                        <h1 className='text-6xl text-slate-900 font-semibold'>
+                        <h1 className='text-4xl md:text-6xl text-slate-900 font-semibold'>
                             Fullstack Developer
                         </h1>
                         <Image
@@ -42,14 +42,14 @@ const Hero = () => {
                 </div>
 
                 <div className='max-w-md'>
-                    <p className='text-dark-gray text-xl font-medium'>
-                        Hi, my name is Kayky, I am a Fullstack developer with 2+ years experience.
+                    <p className='text-dark-gray text-base font-medium'>
+                        Hi, my name is <strong className='text-black font-medium'>Kayky</strong>, I am a Fullstack developer with 2+ years experience.
                     </p>
                 </div>
 
                 <div className='flex'>
                     <div className='cursor-pointer px-6 py-3 bg-gradient-to-r from-gradient-light-blue to-gradient-dark-blue'>
-                        <span className='text-xl'>
+                        <span className='text-base'>
                             Contact me
                         </span>
                     </div>

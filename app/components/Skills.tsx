@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <section className='flex flex-col bg-light-gray items-center py-24'>
             <div className='mb-24'>
-                <h2 className='text-blue-600 font-medium text-5xl'>Skills</h2>
+                <h2 className='text-blue-600 font-medium text-4xl'>Skills</h2>
             </div>
             <div className='flex  max-w-4xl'>
                 <div className='flex gap-4 flex-wrap justify-center'>
