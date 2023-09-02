@@ -69,7 +69,7 @@ const Project:React.FC<ProjectProps> = ({title, description, technologies, image
                     </Link>
                 </div>
             </div>
-            <div className='shadow-2xl relative rounded-3xl before:content-[""] before:h-full before:w-40 md:before:w-96 before:left-[-32px] group-even:before:bg-violet-700 group-odd:before:bg-blue-600 before:absolute before:rounded-full before:blur-3xl before:scale-150 before:opacity-20 before:z-0'>
+            <div className='md:shadow-2xl relative rounded-3xl before:content-[""] before:h-full before:w-64 md:before:w-96 before:left-[-32px] group-even:before:bg-violet-700 group-odd:before:bg-blue-600 before:absolute before:rounded-full before:blur-3xl before:scale-150 before:opacity-20 before:z-0'>
                 <Link href={demo} target='_blank'>
                     <Image
                         className='rounded-3xl h-[250px] w-[375px] md:w-[525px] md:h-[325px] object-cover z-30 relative'

@@ -4,7 +4,7 @@ import projects from '../utils/projects'
 
 const Projects = () => {
     return (
-        <div className='flex w-full py-24'>
+        <section id='projects' className='flex w-full py-24'>
             <div className="flex container mx-auto flex-col items-center">
                 <div className='mb-24'>
                     <h2 className='text-blue-600 font-medium text-4xl'>Projects</h2>
@@ -26,7 +26,7 @@ const Projects = () => {
                 </div>
             </div>
             
-        </div>
+        </section>
     )
 }
 
