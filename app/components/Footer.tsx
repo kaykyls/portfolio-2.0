@@ -4,8 +4,8 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className='bg-dark-blue'>
-            <div className='container mx-auto flex py-8 flex-col gap-32'>
-                <div className='flex justify-between w-full'>
+            <div className='container mx-auto flex py-8 flex-col gap-12 md:gap-32'>
+                <div className='flex gap-12 md:gap-0 flex-col md:flex-row justify-between items-center w-full'>
                     <div>
                         <Link href={"/"} className='cursor-pointer'>
                             <svg width="129" height="30" viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ const Footer = () => {
                         </Link> 
                     </div>
                     <div className='flex'>
-                        <ul className='flex gap-6 font-normal flex-col md:flex-row text-base text-gray'>
+                        <ul className='flex text-center md:text-left gap-6 font-normal flex-col md:flex-row text-base text-gray'>
                             <li>Home</li>
                             <li>About</li>
                             <li>Skills</li>

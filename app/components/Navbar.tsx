@@ -35,7 +35,7 @@ const Navbar = () => {
                     </svg>
                 </Link>
                 <div>
-                    <ul className={`${!hamburgerIsOpen ? "hidden md:flex left-[-200px]" : "flex flex-col fixed w-screen h-screen left-0 top-0 bg-white items-center justify-center transition-all ease-in-out" } md:bg-transparent md:flex-row md:relative md:w-auto md:h-auto gap-14 text-dark-gray text-base font-medium`}>
+                    <ul className={`${!hamburgerIsOpen ? "hidden md:flex left-[-200px] md:left-0" : "flex flex-col fixed w-screen h-screen left-0 top-0 bg-white items-center justify-center transition-all ease-in-out" } md:bg-transparent md:flex-row md:relative md:w-auto md:h-auto gap-14 text-dark-gray text-base font-medium`}>
                         <Link onClick={handleHamburgerMenu} href={"#home"}><li className='cursor-pointer'>Home</li></Link>
                         <Link onClick={handleHamburgerMenu} href={"#about"}><li className='cursor-pointer'>About</li></Link>
                         <Link onClick={handleHamburgerMenu} href={"#skills"}><li className='cursor-pointer'>Skills</li></Link>

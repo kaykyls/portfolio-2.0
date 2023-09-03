@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <main id='home' style={{backgroundImage: `url(${heroBg.src})`}} className='h-screen bg-cover bg-light-gray'>
+    <main id='home' style={{backgroundImage: `url(${heroBg.src})`}} className='h-screen bg-cover bg-light-gray bg-center md:bg-center'>
         {/* <div className=' w-80 h-80 bg-blue-600 rounded-full absolute  inset-x-1/4 inset-y-96 blur-3xl scale-150 opacity-20'>
 
         </div>
