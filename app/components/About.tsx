@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const About = () => {
     return (
-        <section id='about' className='flex flex-col items-center py-24'>
-            <div className='mb-24'>
+        <section id='about' className='flex flex-col items-center py-12 md:py-24'>
+            <div className='mb-12 md:mb-24'>
                 <h2 className='text-blue-600 font-medium text-4xl'>About Me</h2>
             </div>
             <div className='flex flex-col md:flex-row gap-8 container justify-center items-center'>
@@ -21,7 +21,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className='flex justify-between gap-2'>
-                        <div className="w-1/3 flex flex-col gap-4 bg-light-gray px-4 py-6 rounded-lg">
+                        <div className="w-1/3 flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
                             <div>
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_305_770)">
@@ -34,9 +34,9 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black text-base font-medium'>Web<br/>Development</span>
+                            <span className='text-black text-sm font-medium'>Web<br/>Development</span>
                         </div>
-                        <div className=" w-1/3 flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
+                        <div className="w-1/3 flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
                             <div>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_305_768)">
@@ -49,9 +49,9 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black text-base font-medium'>UX/UI<br/>Design</span>
+                            <span className='text-black text-sm font-medium'>UX/UI<br/>Design</span>
                         </div>
-                        <div className=" w-1/3 flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
+                        <div className="w-1/3 flex flex-col gap-4 bg-light-gray px-4 py-8 rounded-lg">
                             <div>
                                 <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_305_772)">
@@ -64,7 +64,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black text-base font-medium'>Mobile<br/>Development</span>
+                            <span className='text-black text-sm font-medium'>Mobile<br/>Development</span>
                         </div>
                     </div>
                 </div>
