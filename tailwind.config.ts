@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -25,7 +26,10 @@ const config: Config = {
         "dark-gray": "#4B5563",
         "gradient-light-blue": "#4371F3",
         "gradient-dark-blue": "#2D57CC",
-        "dark-blue": "#030712",
+        "darker-gradient-light-blue": "#3853DF",
+        "darker-gradient-dark-blue": "#1D319A",
+        "darker-blue": "#030712",
+        "dark-blue": "#030815",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
