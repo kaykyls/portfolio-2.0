@@ -25,19 +25,19 @@ const Contact = () => {
                     <form target='_blank' action="https://formsubmit.co/dev.kayky@gmail.com" method="post" className='flex flex-col w-full gap-4 text-dark-gray'>
                         <div className='flex flex-col text-base gap-2'>
                             <label className='text-black dark:text-white font-medium' htmlFor="#name">Name</label>
-                            <input required className='p-2 border border-gray dark:border-black' id='name' placeholder='Name' type="text" />
+                            <input required className='p-2 border border-slate-200 dark:border-black' id='name' placeholder='Name' type="text" />
                         </div>
                         <div className='flex flex-col text-base gap-2'>
                             <label className='text-black dark:text-white font-medium' htmlFor="#email">Email</label>
-                            <input required className='p-2 border border-gray dark:border-black' id='email' placeholder='Email' type="email" />
+                            <input required className='p-2 border border-slate-200 dark:border-black' id='email' placeholder='Email' type="email" />
                         </div>
                         <div className='flex flex-col text-base gap-2'>
                             <label className='text-black dark:text-white font-medium' htmlFor="#subject">Subject</label>
-                            <input required className='p-2 border border-gray dark:border-black' id='subject' placeholder='Subject' type="text" />
+                            <input required className='p-2 border border-slate-200 dark:border-black' id='subject' placeholder='Subject' type="text" />
                         </div>
                         <div className='flex flex-col text-base gap-2'>
                             <label className='text-black dark:text-white font-medium' htmlFor="#message">Message</label>
-                            <textarea required className='p-2 border border-gray dark:border-black' id='message' rows={5} placeholder='Message'></textarea>
+                            <textarea required className='p-2 border border-slate-200 dark:border-black' id='message' rows={5} placeholder='Message'></textarea>
                         </div>
                         <button className='text-white py-4 bg-gradient-to-r text-base from-gradient-light-blue to-gradient-dark-blue dark:from-darker-gradient-light-blue dark:to-darker-gradient-dark-blue hover:from-darker-gradient-light-blue hover:to-darker-gradient-dark-blue dark:hover:from-gradient-light-blue dark:hover:to-gradient-dark-blue transition hover:transition' type='submit'>Contact Me</button>
                     </form>

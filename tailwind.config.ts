@@ -29,7 +29,7 @@ const config: Config = {
         "darker-gradient-light-blue": "#3853DF",
         "darker-gradient-dark-blue": "#1D319A",
         "darker-blue": "#030712",
-        "dark-blue": "#030815",
+        "dark-blue": "#040917",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

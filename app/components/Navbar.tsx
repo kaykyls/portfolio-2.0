@@ -54,8 +54,8 @@ const Navbar = () => {
     return (
         <div className={`${isTop ? "bg-none" : "bg-white dark:bg-dark-blue shadow"} fixed top-0 flex w-full transition z-40`}>
             <div className='flex justify-between py-6 container mx-auto'>
-                <Link href={"/"} className='cursor-pointer'>
-                    <svg className='fill-black dark:fill-white' width="103.2" height="24" viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <Link href={"/"} className='cursor-pointer flex items-center'>
+                    <svg className='fill-black dark:fill-white' width="71" height="16" viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.196023 30V0.90909H4.58523V14.8011H4.94034L17.142 0.90909H22.6676L10.9347 14.0057L22.7102 30H17.4261L8.02273 17.0028L4.58523 20.9517V30H0.196023ZM29.2159 30H24.5568L35.0256 0.90909H40.0966L50.5653 30H45.9062L37.6818 6.19318H37.4545L29.2159 30ZM29.9972 18.608H45.1108V22.3011H29.9972V18.608ZM49.5533 0.90909H54.5391L62.1385 14.1335H62.451L70.0504 0.90909H75.0362L64.4822 18.5795V30H60.1072V18.5795L49.5533 0.90909ZM79.1804 30V0.90909H83.5696V14.8011H83.9247L96.1264 0.90909H101.652L89.919 14.0057L101.695 30H96.4105L87.0071 17.0028L83.5696 20.9517V30H79.1804ZM103.499 0.90909H108.484L116.084 14.1335H116.396L123.996 0.90909H128.982L118.428 18.5795V30H114.053V18.5795L103.499 0.90909Z"/>
                     </svg>
                 </Link>
