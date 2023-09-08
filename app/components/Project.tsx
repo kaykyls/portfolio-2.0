@@ -18,7 +18,7 @@ interface ProjectProps {
 
 const Project:React.FC<ProjectProps> = ({title, description, technologies, image, repository, demo} : ProjectProps) => {
     return (
-        <div className='group w-full flex justify-center flex-col-reverse md:flex-row gap-10 md:gap-20 lg:gap-40 md:even:flex-row-reverse'>
+        <div className='group w-full flex items-end justify-center flex-col-reverse md:flex-row gap-10 md:gap-20 lg:gap-40 md:even:flex-row-reverse'>
             <div className='flex flex-col justify-end'>
                 <div className='text-blue-600 dark:text-blue-400 text-base font-semibold'>
                     <h3>Featured Project</h3>

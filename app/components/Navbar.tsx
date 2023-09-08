@@ -68,8 +68,9 @@ const Navbar = () => {
                         <Link onClick={handleHamburgerMenu} href={"#contact"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>Contact</li></Link>
                         {hamburgerIsOpen &&
                             <button onClick={handleHamburgerMenu} className='fixed md:hidden right-8 top-6 z-50'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-black dark:text-gray">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                <svg className="w-6 h-6 stroke-dark-gray dark:stroke-gray text-dark-gray dark:text-gray" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M6 6L18 18" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </button> 
                         }
@@ -79,13 +80,29 @@ const Navbar = () => {
                     <div className='flex gap-4'>
                         <button onClick={handleChangeTheme} type='button'>
                             {currentTheme.value === 'dark' ? (
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-dark-gray dark:text-gray">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                                    </svg>
+                                    <svg className="w-6 h-6 stroke-dark-gray dark:stroke-gray text-dark-gray dark:text-gray" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_407_235)">
+                                        <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M12 1V3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M12 21V23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M4.21997 4.22L5.63997 5.64" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M18.3601 18.36L19.7801 19.78" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M1 12H3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M21 12H23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M4.21997 19.78L5.63997 18.36" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M18.3601 5.64L19.7801 4.22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_407_235">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                    
                                 ) : (
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-dark-gray dark:text-gray">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                                    <svg className="w-6 h-6 stroke-dark-gray dark:stroke-gray text-dark-gray dark:text-gray" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
+
                                 )
                             }
                             
@@ -97,8 +114,10 @@ const Navbar = () => {
                         </button> */}
                     </div>
                     <span onClick={handleHamburgerMenu} className='md:hidden'> 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-black dark:text-gray">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                        <svg className="w-6 h-6 stroke-black dark:stroke-gray text-black dark:text-gray" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M3 6H21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M3 18H21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>
                 </div>
