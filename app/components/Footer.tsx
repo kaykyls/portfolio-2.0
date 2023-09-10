@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='bg-darker-blue dark:bg-dark-blue'>
             <div className='container mx-auto flex py-8 flex-col gap-12 md:gap-32'>
-                <div className='flex gap-12 md:gap-0 flex-col md:flex-row justify-between items-center w-full'>
+                <div className='hidden md:flex gap-12 md:gap-0 flex-col md:flex-row justify-between items-center w-full'>
                     <div>
                         <Link href={"/"} className='cursor-pointer'>
                             <svg width="71" height="16" viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">

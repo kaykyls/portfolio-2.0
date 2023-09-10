@@ -69,9 +69,9 @@ const Project:React.FC<ProjectProps> = ({title, description, technologies, image
                     </Link>
                 </div>
             </div>
-            <div className='shadow-sm md:shadow-xl relative rounded-2xl before:content-[""] before:h-full before:w-48 lg:before:w-80 xl:before:w-96 before:left-[-32px] group-even:before:bg-violet-700 group-odd:before:bg-blue-600 before:absolute before:rounded-full before:blur-3xl before:scale-150 before:opacity-20 before:z-0'>
-                <div className='overflow-hidden rounded-2xl'>
-                    <Link href={demo} target='_blank'>
+            <div className='flex w-full md:w-auto shadow-sm md:shadow-xl relative rounded-2xl before:content-[""] before:h-full before:w-48 lg:before:w-80 xl:before:w-96 before:left-[-32px] group-even:before:bg-violet-700 group-odd:before:bg-blue-600 before:absolute before:rounded-full before:blur-3xl before:scale-150 before:opacity-20 before:z-0'>
+                <div className='overflow-hidden w-full md:w-auto flex rounded-2xl'>
+                    <Link className='w-full md:w-auto' href={demo} target='_blank'>
                         <Image
                             className='hover:scale-110 transition duration-300 rounded-2xl h-[250px] w-full md:w-[525px] md:h-[325px] object-cover z-30 relative'
                             src={image}
