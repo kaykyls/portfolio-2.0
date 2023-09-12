@@ -21,7 +21,7 @@ interface Project {
 const projects: Project[] = [
     {
         title: "E-Commerce",
-        description: "A complete fullstack e-commerce website with admin panel that provides seamless online shopping experiences for users and empowers administrators with efficient control over products, orders, and site settings through an intuitive admin panel.",
+        description: "(In Development) A complete fullstack e-commerce website with admin panel that provides seamless online shopping experiences for users and empowers administrators with efficient control over products, orders, and site settings through an intuitive admin panel.",
         image: ecommerce.src,
         repository: "https://github.com/kaykyls/e-commerce/",
         demo: "https://e-commerce-kaykyls.vercel.app/",
