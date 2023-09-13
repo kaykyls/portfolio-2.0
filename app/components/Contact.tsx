@@ -41,7 +41,7 @@ const Contact = () => {
                             <label className='text-black dark:text-white font-medium' htmlFor="#message">Message</label>
                             <textarea required className='p-2 border border-slate-200 dark:border-black' id='message' rows={5} placeholder='Message'></textarea>
                         </div>
-                        <button className='text-white py-4 bg-gradient-to-r text-base from-gradient-light-blue to-gradient-dark-blue dark:from-darker-gradient-light-blue dark:to-darker-gradient-dark-blue hover:from-darker-gradient-light-blue hover:to-darker-gradient-dark-blue dark:hover:from-gradient-light-blue dark:hover:to-gradient-dark-blue transition hover:transition' type='submit'>Contact Me</button>
+                        <button className='text-white py-4 bg-gradient-to-r text-base from-gradient-light-blue to-gradient-dark-blue dark:from-darker-gradient-light-blue dark:to-darker-gradient-dark-blue hover:from-darker-gradient-light-blue hover:to-darker-gradient-dark-blue dark:hover:from-gradient-light-blue dark:hover:to-gradient-dark-blue' type='submit'>Contact Me</button>
                     </form>
                 </div>
             </div>
