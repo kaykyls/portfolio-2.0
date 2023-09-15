@@ -21,16 +21,22 @@ import javascript from "/public/images/technologies/javascript.svg";
 import css from "/public/images/technologies/css.svg";
 import html from "/public/images/technologies/html.svg";
 import jwt from "/public/images/technologies/jwt.svg";
+import expressWhite from "/public/images/technologies/expressWhite.svg";
+import nextWhite from "/public/images/technologies/nextWhite.svg";
+import jwtWhite from "/public/images/technologies/jwtWhite.svg";
+import vercelWhite from "/public/images/technologies/vercelWhite.svg";
 
 interface Technology {
-    name: string,
-    icon: string
+     name: string,
+     icon: string
+     darkModeIcon?: string
 }
 
 const technologies: Technology[] = [
    {
         name: "Next",
-        icon: next
+        icon: next,
+        darkModeIcon: nextWhite
    },
    {
         name: "React",
@@ -50,7 +56,8 @@ const technologies: Technology[] = [
    },
    {
         name: "Express",
-        icon: express
+        icon: express,
+        darkModeIcon: expressWhite
    },
    {
         name: "Redux Toolkit",
@@ -90,7 +97,8 @@ const technologies: Technology[] = [
    },
    {
         name: "Jwt",
-        icon: jwt
+        icon: jwt,
+        darkModeIcon: jwtWhite
    },
    {
         name: "Figma",
@@ -98,7 +106,8 @@ const technologies: Technology[] = [
    },
    {
         name: "Vercel",
-        icon: vercel
+        icon: vercel,
+        darkModeIcon: vercelWhite
    },
    {
         name: "Netlify",
