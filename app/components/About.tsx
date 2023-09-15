@@ -33,7 +33,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-sm font-medium'>Web<br/>Development</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>Web<br/>Development</span>
                         </div>
                         <div className="w-1/3 flex flex-col gap-4 bg-light-gray dark:bg-darker-blue px-4 py-8 rounded-lg">
                             <div>
@@ -48,7 +48,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-sm font-medium'>UX/UI<br/>Design</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>UX/UI<br/>Design</span>
                         </div>
                         <div className="w-1/3 flex flex-col gap-4 bg-light-gray dark:bg-darker-blue px-4 py-8 rounded-lg">
                             <div>
@@ -63,7 +63,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-sm font-medium'>Mobile<br/>Development</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>Mobile<br/>Development</span>
                         </div>
                     </div>
                 </div>

@@ -38,14 +38,16 @@ const Project:React.FC<ProjectProps> = ({title, description, technologies, image
                 <div className='my-10'>
                     <ul className='flex flex-wrap gap-4'>
                         {technologies.map((technology, index) => (
-                            <li key={index}>
+                            <li className="relative group/tech flex justify-center gap-4" key={index}>
                                 <Image
                                     src={theme.value === "dark" && technology.darkModeIcon ? technology.darkModeIcon : technology.icon}
                                     width={32}
                                     height={32}
                                     alt={technology.name}
-                                    className='text-gray-500'
                                 />
+                                <div className='flex opacity-0 justify-center dark:bg-darker-blue rounded-lg px-4 py-2 bg-light-gray translate-y-0 group-hover/tech:translate-y-[-48px] group-hover/tech:opacity-100 transition-all duration-300 ease-in-out transform absolute shadow-2xl'>
+                                    <span className='dark:text-light-gray hidden group-hover/tech:block transition-all cursor-default text-dark-gray'>{technology.name}</span>
+                                </div>
                             </li>
                         ))}
                     </ul>
