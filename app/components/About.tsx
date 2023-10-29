@@ -13,7 +13,7 @@ const About = () => {
                 <div className='flex flex-col justify-between gap-8 md:gap-10'>
                     <div className='md:max-w-lg flex flex-col gap-6'>
                         <p className='text-dark-gray dark:text-gray font-medium text-base'>
-                            I&apos;m an <strong className='font-semibold text-black dark:text-white'>experienced</strong> Full Stack Developer with over <strong className='font-semibold text-black dark:text-white'>2 years</strong> of expertise using technologies like React, Node.js, MongoDB, Tailwind CSS, Next.js, and TypeScript. 
+                            I&apos;m an <strong className='font-semibold text-black dark:text-white'>experienced</strong> Full-Stack Developer with over <strong className='font-semibold text-black dark:text-white'>2 years</strong> of expertise using technologies like React, Node.js, MongoDB, Tailwind CSS, Next.js, and TypeScript. 
                         </p>
                         <p className='text-dark-gray dark:text-gray font-medium text-base'>
                             Skilled in both frontend and backend development, I create adaptable solutions for user needs. Currently I am majoring in <strong className='font-semibold text-black dark:text-white'>Information Systems</strong> at IFBA.
