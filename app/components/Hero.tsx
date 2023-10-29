@@ -38,7 +38,7 @@ const Hero = () => {
                 <div>
                     <div className='flex items-end gap-4'>
                         <h1 className='text-4xl md:text-6xl text-slate-900 dark:text-white font-semibold w-min md:w-auto'>
-                            Fullstack Developer
+                            Full-Stack Developer
                         </h1>
                         <Image
                             className='w-10 h-10 md:w-16 md:h-16'
@@ -52,7 +52,7 @@ const Hero = () => {
 
                 <div className='max-w-md'>
                     <p className='text-dark-gray dark:text-gray text-base font-medium'>
-                        Hi, my name is <strong className='text-black dark:text-white font-medium'>Kayky</strong>, I am a Fullstack developer with 2+ years experience.
+                        Hi, my name is <strong className='text-black dark:text-white font-medium'>Kayky</strong>, I am a Full-Stack developer with 2+ years experience.
                     </p>
                 </div>
 
