@@ -14,7 +14,7 @@ const Navbar = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        if (window.scrollY > 128) {
+        if (window.scrollY > 0) {
           setIsTop(false);
         } else {
           setIsTop(true);
