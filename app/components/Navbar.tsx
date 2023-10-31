@@ -1,9 +1,11 @@
 "use client"
 
 import Link from 'next/link'
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, use } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setTheme } from '../redux/themeSlice'
+import { useSearchParams } from 'next/navigation'
+import { setLanguage } from '../redux/languageSlice'
 
 const Navbar = () => {
     const [isTop, setIsTop] = useState(true);
@@ -11,7 +13,18 @@ const Navbar = () => {
     const [languageMenuIsOpen, setLanguageMenuIsOpen] = useState(false);
 
     const currentTheme = useSelector((state:any) => state.theme)
+    const currentLanguage = useSelector((state:any) => state.language)
     const dispatch = useDispatch()
+
+    const searchParams = useSearchParams()
+    const lang = searchParams.get('lang')
+
+
+    useEffect(() => {
+        if (lang) {
+            dispatch(setLanguage(lang))
+        }
+    }, [lang])
 
     useEffect(() => {
       const handleScroll = () => {
@@ -86,7 +99,7 @@ const Navbar = () => {
                 <div>
                     <ul className={`${!hamburgerIsOpen ? "md:flex -translate-x-full md:-translate-x-0" : "flex flex-col w-screen h-screen bg-white dark:bg-dark-blue items-center justify-center transition-transform duration-300 ease-in-out" } transform fixed left-0 top-0 md:bg-transparent dark:md:bg-transparent md:flex-row md:relative md:w-auto md:h-auto gap-14 text-dark-gray dark:text-gray text-base font-medium z-50`}>
                         <Link onClick={handleHamburgerMenu} href={"#home"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>Home</li></Link>
-                        <Link onClick={handleHamburgerMenu} href={"#about"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>About</li></Link>
+                        <Link onClick={handleHamburgerMenu} href={"#about"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>{currentLanguage.value === "pt-br" ? "Sobre" : "About"}</li></Link>
                         <Link onClick={handleHamburgerMenu} href={"#skills"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>Skills</li></Link>
                         <Link onClick={handleHamburgerMenu} href={"#projects"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>Projects</li></Link>
                         <Link onClick={handleHamburgerMenu} href={"#contact"}><li className='cursor-pointer hover:text-blue-600 dark:hover:text-blue-400'>Contact</li></Link>
@@ -107,8 +120,8 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
                             </svg>
                             {languageMenuIsOpen &&
-                            <div className='absolute top-6 left-[-20px] md:left-auto md:right-0 bg-white dark:bg-dark-blue text-dark-gray dark:text-light-gray rounded-lg border-gray dark:border-dark-gray border'>
-                                <div className=' border-b border-gray dark:border-dark-gray relative'>
+                            <div className='absolute top-6 left-[-20px] md:left-auto md:right-0 bg-white dark:bg-dark-blue text-dark-gray dark:text-light-gray rounded-lg shadow'>
+                                <div className=' border-b border-light-gray dark:border-darker-blue relative'>
                                     {/* <span className='w-2 h-2 bg-blue-600 absolute top-[50%] left-4 md:left-2 translate-x-[-50%] translate-y-[-50%] rounded-full'></span> */}
                                     {/* <p className='px-6 py-2 whitespace-nowrap md:hidden'>PT - BR</p>
                                     <p className='px-6 py-2 whitespace-nowrap hidden md:block'>Português - BR</p> */}

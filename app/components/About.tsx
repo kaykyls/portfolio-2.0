@@ -12,10 +12,10 @@ const About = () => {
                 </div>
                 <div className='flex flex-col justify-between gap-8 md:gap-10'>
                     <div className='md:max-w-lg flex flex-col gap-6'>
-                        <p className='text-dark-gray dark:text-gray font-medium text-base'>
+                        <p className='text-dark-gray dark:text-gray text-base'>
                             I&apos;m an <strong className='font-semibold text-black dark:text-white'>experienced</strong> Full-Stack Developer with over <strong className='font-semibold text-black dark:text-white'>2 years</strong> of expertise using technologies like React, Node.js, MongoDB, Tailwind CSS, Next.js, and TypeScript. 
                         </p>
-                        <p className='text-dark-gray dark:text-gray font-medium text-base'>
+                        <p className='text-dark-gray dark:text-gray text-base'>
                             Skilled in both frontend and backend development, I create adaptable solutions for user needs. Currently I am majoring in <strong className='font-semibold text-black dark:text-white'>Information Systems</strong> at IFBA.
                         </p>
                     </div>
@@ -33,7 +33,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>Web<br/>Development</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm'>Web<br/>Development</span>
                         </div>
                         <div className="w-1/3 flex flex-col gap-4 bg-light-gray dark:bg-darker-blue px-4 py-8 rounded-lg">
                             <div>
