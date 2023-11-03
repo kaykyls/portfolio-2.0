@@ -70,7 +70,7 @@ const Hero = () => {
                     <div className='flex'>
                         <div className='cursor-pointer px-6 py-3 bg-gradient-to-r from-gradient-light-blue to-gradient-dark-blue dark:from-darker-gradient-light-blue dark:to-darker-gradient-dark-blue hover:from-darker-gradient-light-blue hover:to-darker-gradient-dark-blue dark:hover:from-gradient-light-blue dark:hover:to-gradient-dark-blue transition hover:transition'>
                             <Link href={"#contact"} className='text-base text-white'>
-                                {currentLanguage === 'pt-br' ? 'Contato' : 'Contact me'}
+                                {currentLanguage === 'pt-br' ? 'Me Contate' : 'Contact me'}
                             </Link>
                         </div>
                     </div>
