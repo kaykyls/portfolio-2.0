@@ -1,10 +1,16 @@
+"use client"
+
 import React from 'react'
+import { useSearchParams } from 'next/navigation'
 
 const About = () => {
+    const searchParams = useSearchParams()
+    const currentLanguage = searchParams.get('lang')
+
     return (
         <section id='about' className='flex flex-col bg-white dark:bg-dark-blue items-center py-24 md:py-48'>
             <div className='mb-12 md:mb-24'>
-                <h2 className='text-blue-600 dark:text-blue-400 font-medium text-4xl'>About Me</h2>
+                <h2 className='text-blue-600 dark:text-blue-400 font-medium text-4xl'>{currentLanguage === "pt-br" ? "Sobre Mim" : "About Me"}</h2>
             </div>
             <div className='flex flex-col md:flex-row gap-8 container justify-center items-center'>
                 <div className='bg-light-gray dark:bg-darker-blue w-full md:w-96 h-60 md:h-96 rounded-2xl flex items-center justify-center'>
@@ -12,12 +18,30 @@ const About = () => {
                 </div>
                 <div className='flex flex-col justify-between gap-8 md:gap-10'>
                     <div className='md:max-w-lg flex flex-col gap-6'>
-                        <p className='text-dark-gray dark:text-gray text-base'>
-                            I&apos;m an <strong className='font-semibold text-black dark:text-white'>experienced</strong> Full-Stack Developer with over <strong className='font-semibold text-black dark:text-white'>2 years</strong> of expertise using technologies like React, Node.js, MongoDB, Tailwind CSS, Next.js, and TypeScript. 
-                        </p>
-                        <p className='text-dark-gray dark:text-gray text-base'>
-                            Skilled in both frontend and backend development, I create adaptable solutions for user needs. Currently I am majoring in <strong className='font-semibold text-black dark:text-white'>Information Systems</strong> at IFBA.
-                        </p>
+                        {currentLanguage === "pt-br" ? 
+                            (
+                                <>
+                                    <p className='text-dark-gray dark:text-gray text-base'>
+                                        Eu sou um desenvolvedor Full-Stack com <strong className='font-semibold text-black dark:text-white'>experiência</strong> de mais de <strong className='font-semibold text-black dark:text-white'>2 anos</strong> utilizando tecnologias como React, Node.js, MongoDB, Tailwind CSS, Next.js, e TypeScript. 
+                                    </p>
+                                    <p className='text-dark-gray dark:text-gray text-base'>
+                                        Com habilidades tanto no desenvolvimento frontend como no backend, eu crio soluções adaptáveis para as necessidades do usuário. Atualmente eu estou cursando o Bacharelado em <strong className='font-semibold text-black dark:text-white'>Sistemas de Informação</strong> pelo IFBA.
+                                    </p>
+                                </>
+                            )
+                            :
+                            (
+                                <>
+                                    <p className='text-dark-gray dark:text-gray text-base'>
+                                        I&apos;m an <strong className='font-semibold text-black dark:text-white'>experienced</strong> Full-Stack Developer with over <strong className='font-semibold text-black dark:text-white'>2 years</strong> of expertise using technologies like React, Node.js, MongoDB, Tailwind CSS, Next.js, and TypeScript. 
+                                    </p>
+                                    <p className='text-dark-gray dark:text-gray text-base'>
+                                        Skilled in both frontend and backend development, I create adaptable solutions for user needs. Currently I am majoring in <strong className='font-semibold text-black dark:text-white'>Information Systems</strong> at IFBA.
+                                    </p>
+                                </>
+                            )   
+                        }
+                        
                     </div>
                     <div className='flex justify-between gap-2'>
                         <div className="w-1/3 flex flex-col gap-4 bg-light-gray dark:bg-darker-blue px-4 py-8 rounded-lg">
@@ -33,7 +57,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-xs md:text-sm'>Web<br/>Development</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm'>{currentLanguage === "pt-br" ? "Desenvolvimento" : "Web"}<br/>{currentLanguage === "pt-br" ? "Web" : "Development"}</span>
                         </div>
                         <div className="w-1/3 flex flex-col gap-4 bg-light-gray dark:bg-darker-blue px-4 py-8 rounded-lg">
                             <div>
@@ -63,7 +87,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>Mobile<br/>Development</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>{currentLanguage === "pt-br" ? "Desenvolvimento" : "Mobile"}<br/>{currentLanguage === "pt-br" ? "Mobile" : "Development"}</span>
                         </div>
                     </div>
                 </div>

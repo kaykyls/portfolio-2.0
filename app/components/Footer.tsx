@@ -1,7 +1,13 @@
+"use client"
+
 import React from 'react'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 
 const Footer = () => {
+    const searchParams = useSearchParams()
+    const currentLanguage = searchParams.get('lang')
+
     return (
         <footer className='bg-darker-blue dark:bg-dark-blue'>
             <div className='container mx-auto flex py-8 flex-col gap-12 md:gap-32'>
@@ -15,11 +21,11 @@ const Footer = () => {
                     </div>
                     <div className='flex'>
                         <ul className='flex text-center md:text-left gap-6 font-normal flex-col md:flex-row text-base text-gray'>
-                            <Link href={"#home"}><li className='cursor-pointer hover:text-blue-400'>Home</li></Link>
-                            <Link href={"#about"}><li className='cursor-pointer hover:text-blue-400'>About</li></Link>
-                            <Link href={"#skills"}><li className='cursor-pointer hover:text-blue-400'>Skills</li></Link>
-                            <Link href={"#projects"}><li className='cursor-pointer hover:text-blue-400'>Projects</li></Link>
-                            <Link href={"#contact"}><li className='cursor-pointer hover:text-blue-400'>Contact</li></Link>
+                            <Link href={"#home"}><li className='cursor-pointer hover:text-blue-400'>{currentLanguage === "pt-br" ? "Início" : "Home"}</li></Link>
+                            <Link href={"#about"}><li className='cursor-pointer hover:text-blue-400'>{currentLanguage === "pt-br" ? "Sobre" : "About"}</li></Link>
+                            <Link href={"#skills"}><li className='cursor-pointer hover:text-blue-400'>{currentLanguage === "pt-br" ? "Habilidades" : "Skills"}</li></Link>
+                            <Link href={"#projects"}><li className='cursor-pointer hover:text-blue-400'>{currentLanguage === "pt-br" ? "Projetos" : "Projects"}</li></Link>
+                            <Link href={"#contact"}><li className='cursor-pointer hover:text-blue-400'>{currentLanguage === "pt-br" ? "Contato" : "Contact"}</li></Link>
                         </ul>
                     </div>
                 </div>
