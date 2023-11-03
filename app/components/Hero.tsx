@@ -44,10 +44,10 @@ const Hero = () => {
                             <h1 className='flex flex-col md:flex-row text-4xl md:text-6xl text-slate-900 dark:text-white font-semibold w-min md:w-auto'>
                                 {currentLanguage === "pt-br" ? "Desenvolvedor" : "Full-Stack"}
                                 &nbsp;
-                                <span className='flex gap-4'>
+                                <span className='flex gap-4 items-end'>
                                     {currentLanguage === "pt-br" ? "Full-Stack" : "Developer"}
                                     <Image
-                                        className='w-10 h-10 md:w-16 md:h-16'
+                                        className='w-10 h-10 md:w-14 md:h-14'
                                         src={waving.src}
                                         width={64}
                                         height={64}
