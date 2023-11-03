@@ -30,7 +30,7 @@ const Skills = () => {
                                 alt={technology.name}
                             />
                             <div className='flex opacity-0 translate-y-[-32px] group-hover:translate-y-[-48px] md:group-hover:translate-y-[-64px] group-hover:opacity-100 transition-all duration-300 ease-in-out transform rounded-lg shadow-2xl bg-white dark:bg-dark-blue px-4 py-2 absolute'>
-                                <span className='text-black hidden group-hover:block text-center text-base dark:text-light-gray'>{technology.name}</span>
+                                <span className='text-black text-sm text-center md:text-base dark:text-light-gray'>{technology.name}</span>
                             </div>
                         </div>
                     ))}
