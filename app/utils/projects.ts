@@ -67,7 +67,7 @@ const projects: Project[] = [
         title: "Recipe App",
         description: {
             english: "A recipe app that allows users to search for recipes and see ingredients and instructions. It is a single-page application that uses the Spoonacular API to fetch recipes.",
-            portuguese: "Um aplicativo de receitas que permite aos usuários pesquisar receitas e ver os ingredientes e suas instruções em seus favoritos. É uma SPA que utiliza a API do Spoonacular para buscar receitas."
+            portuguese: "Um aplicativo de receitas que permite aos usuários pesquisar receitas e ver os ingredientes e suas instruções. É uma SPA que utiliza a API do Spoonacular para buscar receitas."
         },
         image: recipe.src,
         repository: "https://github.com/kaykyls/recipe-app/",
