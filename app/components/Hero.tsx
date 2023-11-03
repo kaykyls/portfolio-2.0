@@ -41,7 +41,7 @@ const Hero = () => {
 
                     <div>
                         <div className='flex'>
-                            <h1 className='flex flex-col md:flex-row text-4xl md:text-6xl text-slate-900 dark:text-white font-semibold w-min md:w-auto'>
+                            <h1 className='flex flex-col lg:flex-row text-4xl md:text-6xl text-slate-900 dark:text-white font-semibold w-min md:w-auto'>
                                 {currentLanguage === "pt-br" ? "Desenvolvedor" : "Full-Stack"}
                                 &nbsp;
                                 <span className='flex gap-4 items-end'>
