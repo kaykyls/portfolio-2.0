@@ -57,7 +57,7 @@ const About = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className='text-black dark:text-gray text-xs md:text-sm'>{currentLanguage === "pt-br" ? "Desenvolvimento" : "Web"}<br/>{currentLanguage === "pt-br" ? "Web" : "Development"}</span>
+                            <span className='text-black dark:text-gray text-xs md:text-sm font-medium'>{currentLanguage === "pt-br" ? "Desenvolvimento" : "Web"}<br/>{currentLanguage === "pt-br" ? "Web" : "Development"}</span>
                         </div>
                         <div className="w-1/3 flex flex-col gap-4 bg-light-gray dark:bg-darker-blue px-4 py-8 rounded-lg">
                             <div>
