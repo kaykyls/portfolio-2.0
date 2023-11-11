@@ -25,7 +25,7 @@ const Hero = () => {
     return (
         <main id='home' style={{backgroundImage: `url(${backgroundImage.src})`}} className='h-screen bg-cover bg-light-gray dark:bg-darker-blue bg-center md:bg-center'>
             <div className="container mx-auto flex flex-col h-full">
-                <div className='flex flex-col justify-center h-full gap-6'>
+                <div className='flex flex-col justify-center h-full gap-4'>
                     <div className='flex gap-4 items-end'>
                         <Link href={"https://github.com/kaykyls"} target='_blank' className='cursor-pointer group'>
                             <svg className='fill-dark-gray dark:fill-gray group-hover:fill-blue-600 transition' width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
