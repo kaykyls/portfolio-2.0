@@ -28,7 +28,7 @@ const Project:React.FC<ProjectProps> = ({title, description, technologies, image
     const currentLanguage = searchParams.get('lang')
 
     return (
-        <div className='group w-full flex items-end justify-center flex-col-reverse md:flex-row gap-10 md:gap-20 lg:gap-40 md:even:flex-row-reverse'>
+        <div className='group w-full flex items-center justify-center flex-col-reverse md:flex-row gap-6 lg:gap-20 md:even:flex-row-reverse'>
             <div className='flex flex-col justify-end'>
                 <div className='text-blue-600 dark:text-blue-400 text-base font-semibold'>
                     <h3>{currentLanguage === "pt-br" ? "Projeto Em Destaque" : "Featured Project"}</h3>
@@ -85,7 +85,7 @@ const Project:React.FC<ProjectProps> = ({title, description, technologies, image
                 <div className='overflow-hidden w-full md:w-auto flex rounded-2xl'>
                     <Link className='w-full md:w-auto' href={demo} target='_blank'>
                         <Image
-                            className='hover:scale-110 transition duration-300 rounded-2xl h-[250px] w-full md:w-[525px] md:h-[325px] object-cover z-30 relative'
+                            className='hover:scale-110 w-full aspect-video transition duration-300 rounded-2xl object-cover z-30 relative'
                             src={image}
                             width={525}
                             height={325}
