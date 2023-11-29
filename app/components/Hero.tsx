@@ -9,12 +9,14 @@ import lightBg from '/public/images/lightBg.png'
 import darkBg from '/public/images/darkBg.png'
 import { useSearchParams } from 'next/navigation'
 
-const Hero = () => {
+interface languageProps {
+    currentLanguage: string | null
+}
+
+const Hero = ({currentLanguage}: languageProps) => {
     const theme = useSelector((state:any) => state.theme)
     const [currentTheme, setCurrentTheme] = useState<string>('light')
 
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
 
     useEffect(() => {
         setCurrentTheme(theme.value)

@@ -7,7 +7,11 @@ import { setTheme } from '../redux/themeSlice'
 import { useSearchParams } from 'next/navigation'
 // import { setLanguage } from '../redux/languageSlice'
 
-const Navbar = () => {
+interface languageProps {
+    currentLanguage: string | null
+}
+
+const Navbar = ({currentLanguage}: languageProps) => {
     const [isTop, setIsTop] = useState(true);
     const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
     const [languageMenuIsOpen, setLanguageMenuIsOpen] = useState(false);
@@ -15,9 +19,6 @@ const Navbar = () => {
     const languageMenuRef = useRef<any>(null);
 
     const currentTheme = useSelector((state:any) => state.theme)
-
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
 
     const dispatch = useDispatch()
 

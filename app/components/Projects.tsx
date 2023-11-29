@@ -5,9 +5,11 @@ import Project from './Project'
 import projects from '../utils/projects'
 import { useSearchParams } from 'next/navigation'
 
-const Projects = () => {
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
+interface languageProps {
+    currentLanguage: string | null
+}
+
+const Projects = ({currentLanguage}: languageProps) => {
 
     return (
         <section id='projects' className='overflow-hidden flex w-full bg-white dark:bg-dark-blue py-24 md:py-48'>

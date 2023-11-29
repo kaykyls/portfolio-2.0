@@ -4,10 +4,11 @@ import React from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
-const Footer = () => {
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
+interface languageProps {
+    currentLanguage: string | null
+}
 
+const Footer = ({currentLanguage}: languageProps) => {
     return (
         <footer className='bg-darker-blue dark:bg-dark-blue'>
             <div className='container mx-auto flex py-8 flex-col gap-12 md:gap-32'>

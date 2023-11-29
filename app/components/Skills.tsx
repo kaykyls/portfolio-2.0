@@ -6,11 +6,12 @@ import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import { useSearchParams } from 'next/navigation'
 
-const Skills = () => {
-    const theme = useSelector((state:any) => state.theme)
+interface languageProps {
+    currentLanguage: string | null
+}
 
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
+const Skills = ({currentLanguage}: languageProps) => {
+    const theme = useSelector((state:any) => state.theme)
 
     return (
         <section id='skills' className='flex flex-col bg-light-gray dark:bg-darker-blue items-center py-24 md:py-48'>

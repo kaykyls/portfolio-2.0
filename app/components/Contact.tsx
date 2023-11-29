@@ -4,9 +4,11 @@ import Link from 'next/link'
 import React from 'react'
 import { useSearchParams } from 'next/navigation'
 
-const Contact = () => {
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
+interface languageProps {
+    currentLanguage: string | null
+}
+
+const Contact = ({currentLanguage}: languageProps) => {
 
     return (
         <section id='contact' className='bg-light-gray dark:bg-darker-blue py-24 md:py-24 flex flex-col items-center'>

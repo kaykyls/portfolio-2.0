@@ -3,10 +3,11 @@
 import React from 'react'
 import { useSearchParams } from 'next/navigation'
 
-const About = () => {
-    const searchParams = useSearchParams()
-    const currentLanguage = searchParams.get('lang')
+interface languageProps {
+    currentLanguage: string | null
+}
 
+const About = ({currentLanguage}: languageProps) => {
     return (
         <section id='about' className='flex flex-col bg-white dark:bg-dark-blue items-center py-24 md:py-48'>
             <div className='mb-12 md:mb-24'>
