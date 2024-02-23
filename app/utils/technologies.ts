@@ -25,6 +25,8 @@ import expressWhite from "/public/images/technologies/expressWhite.svg";
 import nextWhite from "/public/images/technologies/nextWhite.svg";
 import jwtWhite from "/public/images/technologies/jwtWhite.svg";
 import vercelWhite from "/public/images/technologies/vercelWhite.svg";
+import php from "/public/images/technologies/php.svg";
+import laravel from "/public/images/technologies/laravel.svg";
 
 interface Technology {
      name: string,
@@ -41,6 +43,14 @@ const technologies: Technology[] = [
    {
         name: "React",
         icon: react
+   },
+   {
+        name: "Laravel",
+        icon: laravel
+   },
+   {
+        name: "PHP",
+        icon: php
    },
    {
         name: "Tailwind",
