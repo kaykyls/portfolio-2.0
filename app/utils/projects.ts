@@ -2,6 +2,7 @@ import ecommerce from "/public/images/projects/e-commerce.png"
 import chatApp from "/public/images/projects/chat-app.png"
 import trivia from "/public/images/projects/trivia.png"
 import recipe from "/public/images/projects/recipe.png"
+import imobiliaria from "/public/images/projects/imobiliaria.png"
 import technologies from "./technologies";
 
 interface Technology {
@@ -24,6 +25,19 @@ interface Project {
 }
 
 const projects: Project[] = [
+    {
+        title: "Imobiliária",
+        description: {
+            english: "A comprehensive platform for real estate management, facilitating property search, detailed property exploration, and direct communication with real estate agencies. Administrators possess the capability to not only manage existing property listings but also to add new properties to the system through a secure administrative portal.",
+            portuguese: "Uma plataforma abrangente para gerenciamento imobiliário, facilitando a pesquisa de propriedades, exploração detalhada de imóveis e comunicação direta com imobiliárias. Os administradores possuem a capacidade não apenas de gerenciar listagens de propriedades existentes, mas também de adicionar novas propriedades ao sistema por meio de um portal administrativo seguro."
+        },
+        image: imobiliaria.src,
+        repository: "https://github.com/kaykyls/imobiliaria",
+        demo: "https://imobiliaria-kaykyls.vercel.app/",
+        technologies: technologies.filter(tech => 
+            ["Laravel", "React", "Tailwind", "MySQL"].includes(tech.name)
+        )
+    },
     {
         title: "E-Commerce",
         description: {

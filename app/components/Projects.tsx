@@ -10,7 +10,6 @@ interface languageProps {
 }
 
 const Projects = ({currentLanguage}: languageProps) => {
-
     return (
         <section id='projects' className='overflow-hidden flex w-full bg-white dark:bg-dark-blue py-24 md:py-48'>
             <div className="flex container mx-auto flex-col items-center">
