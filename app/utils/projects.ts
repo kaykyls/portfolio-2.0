@@ -28,8 +28,8 @@ const projects: Project[] = [
     {
         title: "Imobiliária",
         description: {
-            english: "A comprehensive platform for real estate management, facilitating property search, detailed property exploration, and direct communication with real estate agencies. Administrators possess the capability to not only manage existing property listings but also to add new properties to the system through a secure administrative portal.",
-            portuguese: "Uma plataforma abrangente para gerenciamento imobiliário, facilitando a pesquisa de propriedades, exploração detalhada de imóveis e comunicação direta com imobiliárias. Os administradores possuem a capacidade não apenas de gerenciar listagens de propriedades existentes, mas também de adicionar novas propriedades ao sistema por meio de um portal administrativo seguro."
+            english: "A website for a real estate agency, designed specifically to cater to the needs of the agency, offers a user-friendly platform that simplifies property search, enables detailed exploration of available properties, and facilitates direct communication with the agency. Administrators enjoy the capability to effortlessly manage existing property listings and to securely add new properties to the system through a protected administrative portal.",
+            portuguese: "Um site para imobiliária, projetado especificamente para atender às necessidades de uma agência de imóveis, oferece uma plataforma amigável ao usuário que simplifica a busca de propriedades, possibilita uma exploração detalhada dos imóveis disponíveis e facilita a comunicação direta com a agência. Os administradores desfrutam da capacidade de gerenciar com facilidade as listagens de propriedades existentes e de adicionar novos imóveis ao sistema de forma segura por meio de um portal administrativo protegido."
         },
         image: imobiliaria.src,
         repository: "https://github.com/kaykyls/imobiliaria",
