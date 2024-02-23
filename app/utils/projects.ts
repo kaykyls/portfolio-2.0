@@ -33,7 +33,7 @@ const projects: Project[] = [
         },
         image: imobiliaria.src,
         repository: "https://github.com/kaykyls/imobiliaria",
-        demo: "https://imobiliaria-kaykyls.vercel.app/",
+        demo: "https://imobiliaria-production.up.railway.app/",
         technologies: technologies.filter(tech => 
             ["Laravel", "React", "Tailwind", "MySQL"].includes(tech.name)
         )
