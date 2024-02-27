@@ -49,10 +49,6 @@ const technologies: Technology[] = [
         icon: laravel
    },
    {
-        name: "PHP",
-        icon: php
-   },
-   {
         name: "Tailwind",
         icon: tailwind
    },
@@ -72,35 +68,35 @@ const technologies: Technology[] = [
    {
         name: "Redux Toolkit",
         icon: reduxToolkit
-   },
-   {
-        name: "Bootstrap",
-        icon: bootstrap
+     },
+     {
+          name: "Bootstrap",
+          icon: bootstrap
    },
    {
         name: "TypeScript",
         icon: typescript
-   },
-   {
-        name: "Firebase",
-        icon: firebase
-   },
-   {
-        name: "MySQL",
-        icon: mysql
-   },
-   {
-        name: "C",
-        icon: c
-   },
-   {
-        name: "Java",
-        icon: java
-   },
-   {
-        name: "Python",
-        icon: python
-   },
+     },
+     {
+          name: "Firebase",
+          icon: firebase
+     },
+     {
+          name: "MySQL",
+          icon: mysql
+     },
+     {
+          name: "C",
+          icon: c
+     },
+     {
+          name: "Java",
+          icon: java
+     },
+     {
+          name: "Python",
+          icon: python
+     },
    {
         name: "Git",
         icon: git
@@ -126,6 +122,10 @@ const technologies: Technology[] = [
    {
         name: "Sass",
         icon: sass
+   },
+   {
+        name: "PHP",
+        icon: php
    },
    {
         name: "JavaScript",
