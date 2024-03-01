@@ -6,8 +6,9 @@ import { Providers } from './redux/Provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Kayky's Portfolio",
-  description: "Kayky's portfolio, Fullstack developer with 2+ years of experience.",
+  title: 'Portfólio de Kayky',
+  description: 'Desenvolvedor Full Stack em Feira de Santana, Bahia, Brasil.',
+  keywords: 'portfolio, feira de santana, desenvolvedor, laravel, react',
 }
 
 export default function RootLayout({
